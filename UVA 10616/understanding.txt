@@ -1,0 +1,28 @@
+Explanation:
+Input Reading:
+
+The input is read into variables N (number of elements) and Q (number of queries).
+For each set, the numbers are stored in a vector called numbers.
+Dynamic Programming Setup:
+
+A 3-dimensional array dp is used to store results of subproblems.
+The dimensions of dp are index, count, and sum % D, where:
+index refers to the current position in the numbers list.
+count refers to the number of elements chosen so far.
+sum % D refers to the remainder when the current sum is divided by D.
+Recursive Function countGroups:
+
+This function uses recursion and memoization to count the number of valid groups.
+Base Case: When count reaches M, it checks if the sum is divisible by D.
+Recursive Case: It considers both including and excluding the current number and stores the result in dp.
+Output:
+
+The results for each query are printed in the specified format, including the set and query numbers.
+This solution ensures efficient computation of the required results using dynamic programming and recursion. Each query is processed independently, and results are cached to avoid redundant computations.
+
+
+
+
+
+
+
